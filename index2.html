@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Project 1 -Registration Form</title>
+  <link rel="stylesheet" href="css/styles2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+  <div class="general-container">
+    <div class="left-container">
+      <img class="as-img" src="images/right.PNG" alt="AltSchool" />
+    </div>
+
+    <div class="right-container">
+      <form>
+        <h1>Application Form</h1>
+        <p>Fill in your details</p>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="first-name">First Name <span class="required-asterisk">*</span></label>
+            <input type="text" id="first-name" required placeholder="Enter first name">
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name <span class="required-asterisk">*</span></label>
+            <input type="text" id="last-name" required placeholder="Enter last name">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="gender">Gender <span class="required-asterisk">*</span></label>
+            <select id="gender" required>
+              <option value="" selected disabled>Select gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="dob">Date of Birth <span class="required-asterisk">*</span></label>
+            <input type="date" id="dob" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email Address <span class="required-asterisk">*</span></label>
+            <input type="email" id="email-address" required placeholder="Enter email address">
+          </div>
+          <div class="form-group">
+            <label for="education">Education Level <span class="required-asterisk">*</span></label>
+            <select id="education" required placeholder="Select level of education">
+              <option value="" selected disabled>Select level of education</option>
+              <option value="bsc">Bsc</option>
+              <option value="msc">Msc</option>
+              <option value="diploma">Diploma</option>
+              <option value="doctorate">Doctorate</option>
+              <option value="undergraduate">Undergraduate</option>
+              <option value="middle-school">Junior / Middle School</option>
+              <option value="postgraduate">Postgraduate</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="country">Country <span class="required-asterisk">*</span></label>
+            <select id="country" name="country" required>
+              <option value="" selected disabled>Select your country</option>
+              <option value="Afghanistan">Afghanistan</option>
+              <option value="Albania">Albania</option>
+              <option value="Algeria">Algeria</option>
+              <option value="Andorra">Andorra</option>
+              <option value="Australia">Australia</option>
+              <option value="Bahamas">Bahamas</option>
+              <option value="Belize">Belize</option>
+              <option value="Benin">Benin</option>
+              <option value="Botswana">Botswana</option>
+              <option value="Brazil">Brazil</option>
+              <option value="Burkina Faso">Burkina Faso</option>
+              <option value="Burundi">Burundi</option>
+              <option value="Cabo Verde">Cabo Verde</option>
+              <option value="Cambodia">Cambodia</option>
+              <option value="Cameroon">Cameroon</option>
+              <option value="Canada">Canada</option>
+              <option value="Chad">Chad</option>
+              <option value="China">China</option>
+              <option value="Colombia">Colombia</option>
+              <option value="Comoros">Comoros</option>
+              <option value="Congo, Republic of the">Congo, Republic of the</option>
+              <option value="Cote d'Ivoire">Côte d'Ivoire</option>
+              <option value="Croatia">Croatia</option>
+              <option value="Cuba">Cuba</option>
+              <option value="Cyprus">Cyprus</option>
+              <option value="Czech Republic">Czech Republic</option>
+              <option value="Denmark">Denmark</option>
+              <option value="Djibouti">Djibouti</option>
+              <option value="Dominica">Dominica</option>
+              <option value="Dominican Republic">Dominican Republic</option>
+              <option value="Ecuador">Ecuador</option>
+              <option value="Egypt">Egypt</option>
+              <option value="El Salvador">El Salvador</option>
+              <option value="Equatorial Guinea">Equatorial Guinea</option>
+              <option value="Eritrea">Eritrea</option>
+              <option value="Eswatini">Eswatini</option>
+              <option value="Ethiopia">Ethiopia</option>
+              <option value="France">France</option>
+              <option value="Gabon">Gabon</option>
+              <option value="Gambia">Gambia</option>
+              <option value="Germany">Germany</option>
+              <option value="Ghana">Ghana</option>
+              <option value="Greece">Greece</option>
+              <option value="Guinea">Guinea</option>
+              <option value="Guinea-Bissau">Guinea-Bissau</option>
+              <option value="Haiti">Haiti</option>
+              <option value="Honduras">Honduras</option>
+              <option value="Hungary">Hungary</option>
+              <option value="Iceland">Iceland</option>
+              <option value="India">India</option>
+              <option value="Iran">Iran</option>
+              <option value="Iraq">Iraq</option>
+              <option value="Ireland">Ireland</option>
+              <option value="Israel">Israel</option>
+              <option value="Italy">Italy</option>
+              <option value="Jamaica">Jamaica</option>
+              <option value="Japan">Japan</option>
+              <option value="Kenya">Kenya</option>
+              <option value="Lebanon">Lebanon</option>
+              <option value="Lesotho">Lesotho</option>
+              <option value="Liberia">Liberia</option>
+              <option value="Libya">Libya</option>
+              <option value="Malawi">Malawi</option>
+              <option value="Malaysia">Malaysia</option>
+              <option value="Maldives">Maldives</option>
+              <option value="Mali">Mali</option>
+              <option value="Mauritania">Mauritania</option>
+              <option value="Mauritius">Mauritius</option>
+              <option value="Mexico">Mexico</option>
+              <option value="Mongolia">Mongolia</option>
+              <option value="Morocco">Morocco</option>
+              <option value="Mozambique">Mozambique</option>
+              <option value="Myanmar">Myanmar</option>
+              <option value="Namibia">Namibia</option>
+              <option value="New Zealand">New Zealand</option>
+              <option value="Nicaragua">Nicaragua</option>
+              <option value="Niger">Niger</option>
+              <option value="Nigeria">Nigeria</option>
+              <option value="Rwanda">Rwanda</option>
+              <option value="Saudi Arabia">Saudi Arabia</option>
+              <option value="Senegal">Senegal</option>
+              <option value="Serbia">Serbia</option>
+              <option value="Seychelles">Seychelles</option>
+              <option value="Sierra Leone">Sierra Leone</option>
+              <option value="Solomon Islands">Solomon Islands</option>
+              <option value="Somalia">Somalia</option>
+              <option value="South Africa">South Africa</option>
+              <option value="South Sudan">South Sudan</option>
+              <option value="Tanzania">Tanzania</option>
+              <option value="Togo">Togo</option>
+              <option value="Tuvalu">Tuvalu</option>
+              <option value="Uganda">Uganda</option>
+              <option value="Ukraine">Ukraine</option>
+              <option value="United Arab Emirates">United Arab Emirates</option>
+              <option value="United Kingdom">United Kingdom</option>
+              <option value="United States">United States</option>
+              <option value="Venezuela">Venezuela</option>
+              <option value="Yemen">Yemen</option>
+              <option value="Zambia">Zambia</option>
+              <option value="Zimbabwe">Zimbabwe</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="residence">State/City of Residence <span class="required-asterisk">*</span></label>
+            <input type="text" id="residence" required placeholder="Enter your state of residence">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="employment">Employment Status <span class="required-asterisk">*</span></label>
+            <select id="employment" required>
+              <option value="" selected disabled>Select employment status</option>
+              <option value="male">Employed</option>
+              <option value="female">Unemployed</option>
+              <option value="female">Self employed</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone number <span class="required-asterisk">*</span></label>
+            <input type="tel" id="phone" required placeholder="08154387000">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="school">Choose School <span class="required-asterisk">*</span></label>
+            <select id="school" required>
+              <option value="" selected disabled>Select school</option>
+              <option value="male">School of engineering</option>
+              <option value="female">School of business</option>
+              <option value="female">School of Economics</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="course">Choose Course of Study <span class="required-asterisk">*</span></label>
+            <select id="course" required>
+              <option value="" selected disabled>Select course</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="source">How did you hear about us? <span class="required-asterisk">*</span></label>
+            <select id="source" required>
+              <option value="" selected disabled>Select channel</option>
+              <option value="male">Twitter</option>
+              <option value="female">Facebook</option>
+              <option value="female">Linkedin</option>
+              <option value="male">Google</option>
+              <option value="female">Whatsapp</option>
+              <option value="female">Friend</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="discount">Scholarship/Discount code (optional)</label>
+            <input type="text" id="discount_code" required placeholder="scholarship or student ID">
+          </div>
+        </div>
+
+        <p class="terms">By clicking continue, I agree to  <a class="policy" href="https://altschoolafrica.com/terms">Terms of Use</a> and acknowledge that I have read the  <a class="policy" href="https://altschoolafrica.com/policy">Privacy Policy.</a></p>
+
+        <div class="submit-row">
+          <input type="submit" value="Proceed" class="submit-button">
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,212 @@
+/** GENERAL  **/
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.overall-container {
+  background: #000;
+  display: flex;
+  padding: 100px 100px 50px 100px;
+}
+
+.overall-container>.left-side,
+.overall-container>.right-side {
+  flex: 1;
+}
+
+
+h1,
+h2,
+h3,
+h4 h5,
+h6,
+p {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+hr {
+  margin: 30px 0 30px 0;
+}
+
+
+/** LEFT FLEX DIV **/
+.overall-container .left-side {
+  text-align: left;
+  /* background: green; */
+}
+
+.left-side .about h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 0;
+  margin-bottom: 50px;
+}
+
+.left-side .about p {
+  line-height: 2;
+}
+
+.left-side .about a {
+  color: #AAC9CB;
+}
+
+.left-side .about a:hover {
+  text-decoration: none;
+  color: yellow;
+}
+
+.left-side .register {
+  display: flex;
+}
+
+.left-side .register a {
+  color: #AAC9CB;
+  display: inline-flex;
+  align-items: center;
+}
+
+.left-side .register a:hover {
+  text-decoration: none;
+  color: yellow;
+}
+
+.altschool-img {
+  width: 10%;
+  border-radius: 50%;
+  margin-right: 15px
+}
+
+
+/** RIGHT FLEX DIV  **/
+.right-side {
+  text-align: right;
+  /* background: red; */
+}
+
+.right-side h1 {
+  display: none;
+}
+
+.profile {
+  position: relative;
+}
+
+.profile::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+  z-index: 1;
+}
+
+.profile-img {
+  width: 95%;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+
+/** BOTTOM SOCIALS  **/
+.bottom-container {
+  background: #000;
+  text-align: center;
+  padding: 50px 0 50px;
+}
+
+.bottom-container .social-link {
+  padding: 8px;
+  font-size: 13px;
+}
+
+.bottom-container a {
+  color: #AAC9CB;
+}
+
+.bottom-container a:hover {
+  text-decoration: none;
+  color: yellow;
+}
+
+.bottom-container p {
+  color: #ccc;
+  font-size: 10px;
+}
+
+
+
+/** RESPONSIVENESS **/
+@media screen and (max-width: 768px) {
+  .overall-container {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px 20px 20px;
+  }
+
+  .overall-container>.right-side {
+    order: 1;
+  }
+
+  .overall-container>.left-side {
+    order: 2;
+  }
+
+  hr {
+    margin: 20px 0 20px 0;
+  }
+
+  .overall-container .left-side {
+    text-align: justify;
+  }
+
+  .left-side .about h1 {
+    display: none;
+  }
+
+  .left-side .about p {
+    line-height: 1.5;
+  }
+
+  .altschool-img {
+    width: 12%;
+    border-radius: 50%;
+    margin-right: 10px
+  }
+
+  .right-side {
+    text-align: left;
+  }
+
+  .right-side h1 {
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 0;
+    margin-bottom: 40px;
+  }
+
+  .profile-img {
+    width: 100%;
+  }
+
+  .bottom-container {
+    padding: 50px 0 100px;
+  }
+
+  .bottom-container .social-link {
+    font-size: 12px;
+  }
+
+  .bottom-container p {
+    font-size: 8px;
+  }
+}
+
+
+
+@media screen and (max-width: 480px) {}
